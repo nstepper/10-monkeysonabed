@@ -1,3 +1,9 @@
+const Manager = require('../lib/Manager');
+const Engineer = require('../lib/Engineer');
+const Intern = require('../lib/Intern');
+const fs = require('fs');
+
+// Function to prompt for team member details
 function generateHTML(teamMembers) {
     // Generate HTML content here
     // You can use a template literal or a library like Handlebars.js

@@ -8,8 +8,7 @@ The application utilizes Node.js and the Inquirer package to collect user input 
 
 To install the necessary dependencies, run the following command in your project folder:
 
-npm install
-
+- npm install
 
 This will install the required dependencies, including Inquirer and Jest.
 
@@ -17,8 +16,7 @@ This will install the required dependencies, including Inquirer and Jest.
 
 To start the application, run the following command:
 
-node index.js
-
+- node index.js
 
 You will be prompted to enter the information for the team manager, such as name, employee ID, email address, and office number. After providing the manager's details, you will have the option to add engineers, interns, or finish building the team. Follow the prompts to enter the information for each team member.
 
@@ -28,8 +26,7 @@ Once you finish adding the team members, an HTML file named `team.html` will be 
 
 Unit tests have been implemented using the Jest framework. To run the tests, use the following command:
 
-npm test
-
+- npm test
 
 This will execute the test scripts and display the test results.
 
