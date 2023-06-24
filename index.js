@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const Manager = require('./lib/Manager');
+const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const generateHTML = require('./src/generateHTML');
@@ -38,7 +39,7 @@ function promptTeamMember(role) {
         type: 'input',
         name: 'github',
         message: `Enter ${role}'s GitHub username:`,
-        when: role === 'Engineer',
+        when: role === 'Engineer' || role === 'Employee',
       },
       {
         type: 'input',
@@ -52,7 +53,7 @@ function promptTeamMember(role) {
       let teamMember;
       if (role === 'Manager') {
         teamMember = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
-      } else if (role === 'Engineer') {
+      } else if (role === 'Engineer' || role === 'Employee') {
         teamMember = new Engineer(answers.name, answers.id, answers.email, answers.github);
       } else if (role === 'Intern') {
         teamMember = new Intern(answers.name, answers.id, answers.email, answers.school);
@@ -89,7 +90,7 @@ function promptRole() {
         type: 'list',
         name: 'role',
         message: 'Select the role for the team member:',
-        choices: ['Manager', 'Engineer', 'Intern'],
+        choices: ['Manager', 'Engineer', 'Intern', 'Employee'],
       },
     ])
     .then((answer) => {
