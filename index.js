@@ -28,6 +28,24 @@ function promptTeamMember(role) {
         message: `Enter ${role}'s email:`,
       },
       // Add specific role question(s) here
+      {
+        type: 'input',
+        name: 'officeNumber',
+        message: `Enter ${role}'s office number:`,
+        when: role === 'Manager',
+      },
+      {
+        type: 'input',
+        name: 'github',
+        message: `Enter ${role}'s GitHub username:`,
+        when: role === 'Engineer',
+      },
+      {
+        type: 'input',
+        name: 'school',
+        message: `Enter ${role}'s school:`,
+        when: role === 'Intern',
+      },
     ])
     .then((answers) => {
       // Create a new instance of the appropriate class based on role
