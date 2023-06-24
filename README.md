@@ -30,6 +30,18 @@ Unit tests have been implemented using the Jest framework. To run the tests, use
 
 This will execute the test scripts and display the test results.
 
+## Demo
 
+![Alt Text](./10-monkeysonabed.gif)
+
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Questions
+If you have any questions or need further assistance, please feel free to reach out.
+
+- GitHub: https://github.com/nstepper
+- Email: nstepper@outlook.com
 
 
