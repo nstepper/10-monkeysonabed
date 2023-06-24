@@ -1,0 +1,57 @@
+.body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+/*modified css template for professional look*/
+.container {
+    align-items: center;
+    border: 0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    padding: 3px;
+    cursor: pointer;
+    background: linear-gradient(223deg, #7829ef, #000000, #1365e3, #000000);
+    background-size: 800% 800%;
+    -webkit-animation: GradientAnimation 52s ease infinite;
+    -moz-animation: GradientAnimation 52s ease infinite;
+    animation: GradientAnimation 52s ease infinite;
+    margin: 3px;
+}
+  
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+
+h2,
+p {
+background: rgba(255, 255, 255, 0.06);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(7.5px);
+padding: 6px;
+}
+
